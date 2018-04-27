@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+
+    <Button
+        android:id="@+id/btn2"
+        android:text="ListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </Button>
+    <Button
+        android:layout_toRightOf="@+id/btn2"
+        android:id="@+id/btn4"
+        android:text="Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </Button>
+    <Button
+        android:layout_toRightOf="@+id/btn4"
+        android:id="@+id/btn3"
+        android:text="TabHost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </Button>
+
+    <Button
+        android:layout_toRightOf="@+id/btn3"
+        android:id="@+id/btn5"
+        android:text="Menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </Button>
+    <Button
+        android:layout_below="@+id/btn5"
+        android:id="@+id/btn6"
+        android:text="Fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </Button>
+
+    <RadioGroup
+        android:id="@+id/RadioGroup01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn6">
+        <RadioButton
+            android:id="@+id/RadioButton01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RadioButton01" >
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/RadioButton02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RadioButton02" >
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/RadioButton03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RadioButton03" >
+        </RadioButton>
+    </RadioGroup>
+
+
+</RelativeLayout>

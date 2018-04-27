@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout02">
+    <TextView android:id="@+id/label"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:text="用户名：">
+    </TextView>
+    <EditText android:id="@+id/entry"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/label">
+    </EditText>
+    <!-- 属性android:layout_below，确定EditText控件在ID为label的元素下方
+         属性android:layout_alignParentRight，声明该元素在其父元素的右边边界对齐
+         属性android:layout_marginLeft，左移10dip
+         属性android:layout_toLeftOf，声明该元素在ID为cancel元素的左边
+         属性android:layout_alignTop，声明该元素与ID为cancel的元素在相同的水平位置 -->
+    <Button android:id="@+id/cancel"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dip"
+        android:layout_below="@id/entry"
+        android:text="取消" >
+    </Button>
+
+    <Button android:id="@+id/ok"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_toLeftOf="@id/cancel"
+        android:layout_alignTop="@id/cancel"
+		android:text="确认">
+	</Button>
+
+</RelativeLayout>

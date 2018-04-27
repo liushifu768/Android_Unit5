@@ -1,0 +1,15 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <fragment android:name ="edu.hrbeu.test3.myapplication3.AFragment"
+        android:id="@+id/frag_a"
+        android:layout_weight="1"
+        android:layout_width="0px"
+        android:layout_height="match_parent" />
+    <fragment android:name ="edu.hrbeu.test3.myapplication3.BFragment"
+        android:id="@+id/frag_b"
+        android:layout_weight="1"
+        android:layout_width="0px"
+        android:layout_height="match_parent" />
+</LinearLayout>
